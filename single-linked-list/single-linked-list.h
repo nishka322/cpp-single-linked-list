@@ -175,6 +175,7 @@ public:
 
     Iterator InsertAfter(ConstIterator pos, const Type& value) {
         Node* node = pos.node_;
+    	assert(node != nullptr);
         if (!node) {
             return end();
         }
